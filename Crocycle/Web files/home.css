@@ -8,7 +8,7 @@
     color:white;
     font-family: Mont; /*use the Frederika font and color*/
     display:flex;
-    /*justify-content:space-between; */
+    justify-content:space-between; 
   }/*manages the navbar class*/
   
   
