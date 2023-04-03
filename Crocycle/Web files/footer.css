@@ -1,54 +1,48 @@
 @font-face {
     font-family: "Fred";
     src: url("../Fonts/Fredoka.ttf") format('truetype');
-  }
+}
+/* declares Fredoka font */
 footer{
     font-family: Fred;
+    font-weight: 100;
     display: flex;
     align-items: flex-start;
     background-color: #7A3E65;
-    margin: 0px;
-    gap: 35px;
-    color: white;
-   left: 0;
-   bottom: 0;
-   padding-top: 10px;
-   
-   padding-right: 50px;
-   padding-left: 50px;
-   padding-bottom:10px;
 
+    /* uses font-family Fred, sets display to flex and align-items to flex-start */
+    
+    color: white;
+
+    /* font color is white */
+
+    margin-top: auto;
+
+    /* makes its margin fill the space between it and its previous sibling in the main html */
+
+    justify-content:space-between;
+
+    /* justify-content set to space-between, bottom is 0 so */
+    
+    padding: 35px 40px;
+
+    /* top and bottom padding is 35px while right and left is 40px */    
 }
-footer .top{
-    border-bottom: 2px solid black;
-    padding-bottom: 20px;
+
+/*changes size of the header*/
+footer h1{
+    font-size: 15px;
 }
-footer .top .links{
-    display: grid;
-    grid-template-columns: repeat(2, lfr);
-    gap: 30px;
+footer a{
+    font-size: 13px;
 }
-footer .bottom{
-    padding: 20px 0;
-    justify-content: space-between;
+
+/*removes bullets on the list*/
+footer div{
+    list-style-type: none;
 }
-footer .links > div {
-    display: grid;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-footer h2{
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #f7f7f7;
-}
-footer .legal{
-    font-size: 12px;
-}
-footer .legal > a{
-    margin: 0 4px;
-}
-footer .legal > span{
-    margin-right: 10px;
+
+/*adds spacing to the links*/
+footer div li{
+    padding: 10px;
 }
