@@ -2,15 +2,6 @@
     font-family: "Mont";
     src: url("../Fonts/Montserrat.ttf") format('truetype');
   }
-  /* import Montserrat font */
-  .navbar{
-    padding: 15px;
-    color:white;
-    font-family: Mont; /*use the Frederika font and color*/
-    display:flex;
-    justify-content:space-between; 
-  }/*manages the navbar class*/
-  
   
   /*
   font{
