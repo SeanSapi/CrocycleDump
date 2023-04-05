@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Fred";
+    src: url("../Fonts/Fredoka.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Mont";
+    src: url('../Fonts/Montserrat.ttf') format('truetype');
+}
+
+
+/* import Montserrat font */
+
+/* Header CSS Section */ 
+/* ------------------------------------------------------------------------------------------------- */
+.banner{
+    background-image:url("/Crocycle/StockImages/Icons/CrocyleHeaderImg.png");
+    padding: 5px;
+}
+.header{
+    padding: 15px;
+    color:white;
+    font-family: Mont; /*use the Frederika font and color*/
+    display:flex;
+    justify-content:space-between; 
+}
+/*manages the header class*/
+.header a{
+    color:white;
+}
+.options{
+  display:flex;
+  justify-content: space-between;
+}
+.options a{
+  padding-right: 50px;
+  text-decoration:none;
+  text-shadow: 2px 2px #645a56;
+}
+
+/* Footer CSS Section */
+/* ------------------------------------------------------------------------------------------------- */
+/* declares Fredoka font */
+footer{
+    font-family: Fred;
+    font-weight: 100;
+    display: flex;
+    align-items: flex-start;
+    background-color: #A84448;
+
+    /* uses font-family Fred, sets display to flex and align-items to flex-start */
+    
+    color: white;
+
+    /* font color is white */
+
+    margin-top: auto;
+
+    /* makes its margin fill the space between it and its previous sibling in the main html */
+
+    justify-content:space-between;
+
+    /* justify-content set to space-between, bottom is 0 so */
+    
+    padding: 35px 40px;
+
+    /* top and bottom padding is 35px while right and left is 40px */    
+}
+
+/*changes size of the header*/
+footer h1{
+    font-size: 15px;
+}
+footer a{
+    font-size: 13px;
+}
+
+/*removes bullets on the list*/
+footer div{
+    list-style-type: none;
+}
+
+/*adds spacing to the links*/
+footer div li{
+    padding: 10px;
+}
