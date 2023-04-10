@@ -1,73 +1,127 @@
+
+
+@font-face {
+  font-family: "MontR";
+  src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
+
+}
+
+@font-face {
+  font-family: "HighC";
+  src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
+}
+
 @font-face {
     font-family: "Fred";
     src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
-
-    
-  }
-
-@font-face {
-    font-family: "HighC";
-    src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
 }
-
-  @font-face {
-    font-family: "Mont";
-    src: url("../Crocycle/Fonts/Montserrat.ttf");
-
-    
-  }
-
-  @font-face {
-    font-family: "MontR";
-    src: url("/Crocycle/Fonts/MonsterratReg.ttf") format('truetype');
-
-
-  }
-
+/* Font families imported */
 .inputsection h1{
     font-family: HighC;
-    font-size: 50px;
+    font-size: 70px;
+ 
     text-align: center;
-}
-
+} 
+/* this manages the Crocycle */
+/*Background*/
 body{
  background-color: #EDD1A9;
- 
- height: 100%;
- width: 100%;
+ /*height: 100%;
+ width: 100%;*/
+ margin: 0;
+ display: flex;
+  align-items:center;
+    justify-content: center;
 
 }
 
+/*Crocycle Logo*/
+.logo{
+   position: relative;
+   left: 700px;
+   top: -200px;
+}
+
+/* this section class manages the div where the content is in */
 .section{
-    padding-top:10%;;
+    margin-right:200px;
+    margin-top: 7%;
+    /* manages the position of the section div */
+    background-color: #A96262;
+    /* changes background color */
     flex-direction:space-between;
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    /* centers the objects within */
+    height: 500px;
+    width: 55%;
+    /* manages the height and width */
+    border-radius: 15px;
+    overflow:hidden;
+    /* rounds the corners and hides overflowing hidden */
+    
     
 }
 
+
+/*Parallax Section*/
+.parallax{
+  margin-right:20px;
+  min-width:100px;
+  height: 635px;
+  width:30%;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 15px;
+  
+}
+/* This is where the login section is*/
 .inputsection {
     /*width: 382px;*/
     width: 30%;
     padding: 75px;
-    background: #A96262;
     border-radius: 15px ;
+    flex-grow: 2;
+    
 }
+
+/*Forget Password Section*/
+.inputsection p{
+  text-align: center;
+  font-family: MontR;
+}
+
+/*Hyperlink*/
+.section a {
+  text-decoration:none;
+  font-weight:bold;
+  color: black;
+}
+
+/*Username and Password form*/
 .inputs{
     border: 1px solid #DDD; 
     background-color:white;
-    padding: 5px;
+    padding: 12px;
     border-radius: 5px;
+   
 }
+/* manages the actual input elements */
+.inputs input{
+    font-family: MontR;
+    /* changes the font family */
+}
+
+/*Button*/
 .btn{
-    
-    font-size:20px;
+    font-family: MontR;
+    font-size:19px;
+    font-weight:bold;
     background-color: #7A3E65;
     width: 100%;
     height: 100%;
+    padding: 8px;
     border: none;
     border-radius: 7px;
     color:white;
