@@ -38,9 +38,25 @@ body{
 /*Crocycle Logo*/
 .logo{
    position: relative;
-   left: 700px;
+   left: 500px;
    top: -200px;
 }
+
+/*Media Query*/ 
+@media only screen and (min-width: 1200px) {
+  .logo {
+    left: 820px;
+    top: -170px;
+
+  }
+}
+
+@media only screen and (min-width: 1080px){
+  .logo{
+    left: 700px;
+  }
+}
+
 
 /* this section class manages the div where the content is in */
 .section{
@@ -64,6 +80,14 @@ body{
     
 }
 
+/*Media Query, used to */
+@media only screen and (min-width: 1200px) {
+  .section {
+    margin-top: 10%;
+
+  }
+}
+
 
 /*Parallax Section*/
 .parallax{
@@ -76,6 +100,29 @@ body{
   border-radius: 15px;
   
 }
+
+.parallax:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(145, 43, 158, 0.12) 40%,rgb(48, 27, 27) 100%);
+}
+
+.parallax img::before{
+  width:150%;
+  height: 150%;
+}
+
+.parallax:before{
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  background-attachment:fixed;
+}
+
 /* This is where the login section is*/
 .inputsection {
     /*width: 382px;*/
