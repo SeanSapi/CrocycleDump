@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "MontR";
   src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
@@ -25,14 +23,22 @@
 /* this manages the Crocycle */
 /*Background*/
 body{
- background-color: #EDD1A9;
- /*height: 100%;
- width: 100%;*/
  margin: 0;
+ 
+}
+.bgclass{
+ height: 100vh;
+ overflow: hidden;
+ position: relative;
+ width: 100vw;
+ /*background-image: url(/Crocycle/Images/StockImages/LogPageBG.png);*/
+ background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('/Crocycle/Images/StockImages/LogPageBG.png');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
  display: flex;
-  align-items:center;
-    justify-content: center;
-
+ align-items:center;
+ justify-content: center;
 }
 
 /*Crocycle Logo*/
@@ -42,18 +48,22 @@ body{
    top: -200px;
 }
 
-/*Media Query*/ 
+/*Media Query Section*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*Media Query (Monitor)*/ 
 @media only screen and (min-width: 1200px) {
   .logo {
     left: 820px;
-    top: -170px;
+    top: -240px;
 
   }
 }
 
+/*Media Query (Laptop)*/
 @media only screen and (min-width: 1080px){
   .logo{
-    left: 700px;
+    left: 690px;
   }
 }
 
@@ -61,7 +71,7 @@ body{
 /* this section class manages the div where the content is in */
 .section{
     margin-right:200px;
-    margin-top: 7%;
+    margin-top: 2%;
     /* manages the position of the section div */
     background-color: #A96262;
     /* changes background color */
@@ -76,18 +86,10 @@ body{
     border-radius: 15px;
     overflow:hidden;
     /* rounds the corners and hides overflowing hidden */
+    box-shadow: 0 8px 8px 3px rgb(41, 40, 40, 0.4);
     
     
 }
-
-/*Media Query, used to */
-@media only screen and (min-width: 1200px) {
-  .section {
-    margin-top: 10%;
-
-  }
-}
-
 
 /*Parallax Section*/
 .parallax{
@@ -101,27 +103,6 @@ body{
   
 }
 
-.parallax:after{
-  content:"";
-  width:100%;
-  height:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  z-index:-1;
- background: linear-gradient(to bottom, rgba(145, 43, 158, 0.12) 40%,rgb(48, 27, 27) 100%);
-}
-
-.parallax img::before{
-  width:150%;
-  height: 150%;
-}
-
-.parallax:before{
-  animation: grow 360s  linear 10ms infinite;
-  transition:all 0.4s ease-in-out;
-  background-attachment:fixed;
-}
 
 /* This is where the login section is*/
 .inputsection {
@@ -152,12 +133,13 @@ body{
     background-color:white;
     padding: 12px;
     border-radius: 5px;
-   
 }
+
 /* manages the actual input elements */
 .inputs input{
     font-family: MontR;
-    /* changes the font family */
+    outline: none;
+    width: 375px;
 }
 
 /*Button*/

@@ -14,25 +14,42 @@
 /* ------------------------------------------------------------------------------------------------- */
 .banner{
     background-image:url("/Crocycle/StockImages/Icons/CrocyleHeaderImg.png");
-    padding: 5px;
 }
 .header{
     padding: 15px;
+    
+    height: 300px;
+    background-image: url(/Crocycle/Images/StockImages/CrocyleHeaderImg.png);
+
     color:white;
     font-family: Mont; /*use the Frederika font and color*/
     display:flex;
-    justify-content:space-between; 
+    justify-content:space-between;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
 }
 /*manages the header class*/
 .header a{
     color:white;
 }
+.header:before{
+    background-size:100%;
+    background-attachment: fixed;
+    animation: grow 360s  linear 10ms infinite;
+    transition:all 0.4s ease-in-out;
+    background-repeat: no-repeat;
+    z-index:-2
+}
+
 .options{
   display:flex;
   justify-content: space-between;
+  align-items: center;
+  
+  height: 15%;
+  width: 65%;
 }
 .options a{
-  padding-right: 50px;
   text-decoration:none;
   text-shadow: 2px 2px #645a56;
 }
