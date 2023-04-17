@@ -138,7 +138,7 @@ body{
 /* manages the actual input elements */
 .inputs input{
     font-family: MontR;
-    outline: none;
+    outline: none; /* removes the outline from the actual input box */
     width: 375px;
 }
 
