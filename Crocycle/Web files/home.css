@@ -94,6 +94,11 @@
     list-style:none; /* removes list styles (bullets, numbers, etc.) */
   }
 
+  
+  .swiper-wrapper {
+    padding-bottom: 25px;
+}
+
   /*Slider*/
   .slider-section h1{ /* manages slider-section h1 objects*/
     font-family: HighC; /*Uses High Cruiser Font*/
@@ -103,8 +108,6 @@
   .slider-box{  /* manages slider-box class */
     width:100%; /* full page width */
     max-width: 500px; /* set max-width allowed to be 500px */
-    
-    padding: 0 10px; /* set top and bottom to 0 and side padding to be 10px */
     margin: 60px auto; /* set top and bottom margin to 60px and side margin to auto*/
   }
   .slider-img{ /* manages slider-img class */
@@ -123,7 +126,7 @@
     object-position: center; /* centers the object */
   }
   .slider-txt{ /* manages slider-txt class */
-    margin-top: 415px; /* Places this at the bottom of the slider image */
+    margin-top: 345px; /* Places this at the bottom of the slider image */
     position:absolute; /* makes the position independent of the parent object's settings*/
     z-index: 2; /* puts this on top of the slider image (slider image is on z-index: 1) */
     font-family: Mont; /*use the Mont font and color*/

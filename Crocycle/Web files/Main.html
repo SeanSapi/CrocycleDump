@@ -6,6 +6,8 @@
     <title>Crocyle</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     </head> 
     <!-- import stylesheet mainstyles in head-->
     <body>
@@ -43,28 +45,136 @@
       <div class="slider-section">
 
         <h1>Our Products</h1>
+        
+          <!-- Swiper carousel source: https://www.youtube.com/watch?v=BKKcGb80MOs -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper"> <!-- Swiper Carousel Wrapper-->
 
-        <div class="slider-box">
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 1 -->
+                        
+                       <div class="slider-box"> <!-- Swiper Carousel Item 1 -->
+                        <div class="slider-img"> 
+                          <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                           <div class="slider-txt"> 
+                              <a href="#">VIEW</a>
+                           </div>
+                        </div>
+                       </div> 
 
-          <div class="slider-img"> 
-            <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
-            
-            <div class="slider-txt"> 
-              <a href="#">VIEW</a>
+                  </div>
+
+                   
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 2 -->
+                        
+                    <div class="slider-box"> <!-- Swiper Carousel box -->
+                     <div class="slider-img"> 
+                       <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                        <div class="slider-txt"> 
+                          <a href="#">VIEW</a>
+                        </div>
+                     </div>
+                    </div> 
+
+                  </div>
+
+                
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 3 -->
+                        
+                    <div class="slider-box"> <!-- Swiper Carousel box -->
+                     <div class="slider-img"> 
+                       <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                        <div class="slider-txt"> 
+                         <a href="#">VIEW</a>
+                        </div>
+                     </div>
+                    </div> 
+
+                  </div>
+
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 4 -->
+                        
+                    <div class="slider-box"> <!-- Swiper Carousel box -->
+                     <div class="slider-img"> 
+                       <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                        <div class="slider-txt"> 
+                         <a href="#">VIEW</a>
+                        </div>
+                     </div>
+                    </div> 
+
+                  </div>
+
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 5 -->
+                        
+                    <div class="slider-box"> <!-- Swiper Carousel box -->
+                     <div class="slider-img"> 
+                       <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                        <div class="slider-txt"> 
+                         <a href="#">VIEW</a>
+                        </div>
+                     </div>
+                    </div> 
+
+                  </div>
+
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 6 -->
+                        
+                    <div class="slider-box"> <!-- Swiper Carousel box -->
+                     <div class="slider-img"> 
+                       <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                        <div class="slider-txt"> 
+                         <a href="#">VIEW</a>
+                        </div>
+                     </div>
+                    </div> 
+
+                  </div>
+
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 7 -->
+                        
+                    <div class="slider-box"> <!-- Swiper Carousel box -->
+                     <div class="slider-img"> 
+                       <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                        <div class="slider-txt"> 
+                         <a href="#">VIEW</a>
+                        </div>
+                     </div>
+                    </div> 
+
+                  </div>
+                  
+
+                  <div class="swiper-slide"> <!-- Swiper Carousel Slide 8 -->
+                        
+                    <div class="slider-box"> <!-- Swiper Carousel box -->
+                     <div class="slider-img"> 
+                       <img src="/Crocycle/Images/ProductImgs/Dolls.png"> </img>
+                        <div class="slider-txt"> 
+                         <a href="#">VIEW</a>
+                        </div>
+                     </div>
+                    </div> 
+
+                  </div>
+
+
+          
             </div>
+            <div class="swiper-pagination"></div>
 
-          </div>
+        </div>
 
-        </div> 
+
+
+          
 
       </div>
-
       <!-- Description -->
       <div class="waw">
 
         <div class="textdiv">
            <!-- Description of who we are and what our business is about -->
-          <h1>Who are we?</h1>
+          <h1>Who we are</h1>
           <p>
             In Crocycle, we are a crochet business that uses recyclable to upgrade your style
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -154,6 +264,36 @@
           
         </div>
       </footer>
+
+
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          },
+        });
+      </script>
 
     </body>
 </html>
