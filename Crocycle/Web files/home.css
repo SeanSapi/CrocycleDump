@@ -133,6 +133,12 @@
     
     
   }
+  @media only screen and (min-width: 1080px){
+    .slider-txt{
+      margin-top: 265px;
+    }
+  }
+
   .slider-txt a{ /* manages links inside slider-txt */
     object-position: center; /* positions to be center */
     font-size: 25px; /* font size is 25px */
