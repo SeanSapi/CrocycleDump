@@ -95,7 +95,7 @@
   }
 
   
-  .swiper-wrapper {
+  .swiper-wrapper { /* Padding added to keep the slide buttons from overlapping with the view buttons*/
     padding-bottom: 25px;
 }
 
@@ -120,9 +120,13 @@
   
   }
   .slider-img img{ /* manages the imgs inside slider-img classes */
-    width: 100%;
-    height: 100%; /* sets height and width to 100% */
-    object-fit: contain;  /* sets the img to be fully 'contained' */  
+    /*width: 100%;
+    height: 100%;  sets height and width to 100% */
+    width: 645px;
+    height: 600px; 
+    max-height:520px;
+    max-width: 400px; 
+    object-fit: cover;  /* sets the img to be fully 'contained' */  
     object-position: center; /* centers the object */
   }
   .slider-txt{ /* manages slider-txt class */
@@ -135,7 +139,7 @@
   }
   @media only screen and (min-width: 1080px){
     .slider-txt{
-      margin-top: 265px;
+      margin-top: 465px;
     }
   }
 
