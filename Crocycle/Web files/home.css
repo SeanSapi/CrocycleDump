@@ -53,6 +53,31 @@
     height:5%; 
     width:100%;
   }
+  /* create new div class to create the "2-to-1" image layout for the 2nd and 3rd info boxes as designed in the figma */
+  .imgdiv2{
+    object-fit: contain; 
+    /* set to object-fit contain, the full image will be displayed as best as possible */
+    flex-grow: 2; /* set the grow of the class to 2 */
+    width:100%;
+    height:100%; /* set to full page width for both width and height */
+    display: flex; /* set display to flex for flexbox use */
+ 
+  }
+  .imgdiv2 img{ /* manage imgdiv2's img objects, same settings as imgdiv1's img objects */
+    vertical-align: bottom;
+    height:100%;
+    width:100%;
+  }
+  .bigLeft, .smallRight{  /* manages both .bigLeft and .smallRight class in imgdiv2 */
+    flex: 1; /* set flex space to 1 (the biggest) */
+    display: flex; 
+    flex-direction: column;
+    /* display set to flex and direction to column*/
+  }
+  .smallRight div{ /* set the divs (inside .smallRight) containing the imgs */
+    flex: 2; /* */
+  }
+
 
   /*Description page*/
   .waw{ /* manages waw class */
