@@ -30,96 +30,51 @@
     display: flex;
     flex-direction: column;
   }
-  
-  /* placeholder image currently, replace when the images are available - John */
-  .imgdiv{
+  .sectionsbanner{ /* manages the sectionsbanner class which contains within it the second options menu that lead to the categories of our products */
+    display:flex; 
+    justify-content: center;
+    align-items: center; /* display on flex and centered the justfy-content and align-items options*/
+  }
+  .options2{  /* manages class options2, which is the second header menu underneath the banner that lead to the respective slider */
+    font-family: Mont;
     
-    object-fit: contain; 
-    /* set to object-fit contain, the full image will be displayed as best as possible */
-    flex-grow: 2; /* set the grow of the class to 2 */
-    width:100%;
-    height:100%; /* set to full page width for both width and height */
-  
-  }
-  .imgdiv img{
-    vertical-align: bottom;
-    height:5%; 
-    width:100%;
-  }
-  /* create new div class to create the "2-to-1" image layout for the 2nd and 3rd info boxes as designed in the figma */
-  .imgdiv2{
-    object-fit: contain; 
-    /* set to object-fit contain, the full image will be displayed as best as possible */
-    flex-grow: 2; /* set the grow of the class to 2 */
-    width:100%;
-    height:100%; /* set to full page width for both width and height */
-    display: flex; /* set display to flex for flexbox use */
- 
-  }
-  .imgdiv2 img{ /* manage imgdiv2's img objects, same settings as imgdiv1's img objects */
-    vertical-align: bottom;
-    height:100%;
-    width:100%;
-  }
-  .bigLeft, .smallRight{  /* manages both .bigLeft and .smallRight class in imgdiv2 */
-    flex: 1; /* set flex space to 1 (the biggest) */
-    display: flex; 
-    flex-direction: column;
-    /* display set to flex and direction to column*/
-  }
-  .smallRight div{ /* set the divs (inside .smallRight) containing the imgs */
-    flex: 2; /* */
-  }
-
-
-  /*Description page*/
-  .waw{ /* manages waw class */
-    
-    display: flex;
-    flex: 1 1 100%;
-    align-items: stretch;
+    font-size: 15px;
+    font-weight:bold; /* boldens font that is 15px in size */
+    display:flex; /* set displays to flex, justify-content to space-between for space between the individual objects inside this class, align-items to center  */
     justify-content: space-between;
-    background-color:#E9A178;
-  }
-
-  .waw:nth-of-type(2) { /* selects the first instance of this waw class */
-    margin-top: 5%; /* add some slight margin on top */
-  }
-
-  .waw:nth-of-type(3) { /* selects the 2nd instance of this waw class */
-    background-color: #E9A178;
-  }
-  .waw:last-of-type { /* selects the last instance of this waw class */
-    margin-bottom: 5%; /* add some slight margin below the object */
-  }
-
-  .textdiv{  /* container for the text description */
+    align-items: center;
     
-    padding: 56px; /* padding */
-    word-wrap: break-word; /*  add line break when the text reaches the end of the width */
-    width: 500px; /* set width of the text object to 500 px */
-    text-align: justify; /* set to justify alignment */
-
+    margin: 0 45px; /* top and bottom margins are 0 and side margins are 45px*/
+    height: 15%; /* set height to 15% and width to 85% */
+    width: 85%; 
   }
-  .waw h1{ /* manages the h1 objects inside the waw class */
-    font-family:HighC; /* set font used for h1 to High Cruzer */
+  .options2 a{ /* no text-decoration on the links and set color to black */
+    text-decoration:none;
+    color:black;
   }
-  .waw p{ /* manages the p objects inside waw classes */
-    font-size: 15px; /* set to 15px*/
-    font-family:Mont; /* set to Montserrat font */
-  }
+  
   ul{ /* manages ul objects */
     list-style:none; /* removes list styles (bullets, numbers, etc.) */
+  }
+
+
+  .slider-section:nth-of-type(3) { /* selects the first instance of this waw class */
+    margin-top: 3%; /* add some slight margin on top */
+  }
+
+  .slider-section:last-of-type { /* selects the last instance of this waw class */
+    margin-bottom: 15%; /* add some slight margin below the object */
   }
 
   
   .swiper-wrapper { /* Padding added to keep the slide buttons from overlapping with the view buttons*/
     padding-bottom: 25px;
-}
+  }
 
   /*Slider*/
   .slider-section h1{ /* manages slider-section h1 objects*/
     font-family: HighC; /*Uses High Cruiser Font*/
+    font-size: 45px;
     padding: 0 45px; /* set top and bottom padding to 0 while sde padding is 45px*/
     height: 100%; /* full page height */
   }
