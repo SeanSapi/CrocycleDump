@@ -30,6 +30,9 @@
     display: flex;
     flex-direction: column;
   }
+  .welcome{ /* sets the welcome page's top for this specific page */
+  top: 185px; /* sets its distance from the top to 175px */
+  }
   .sectionsbanner{ /* manages the sectionsbanner class which contains within it the second options menu that lead to the categories of our products */
     display:flex; 
     justify-content: center;

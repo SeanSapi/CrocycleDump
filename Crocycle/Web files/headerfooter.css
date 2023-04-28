@@ -60,7 +60,6 @@
   width: 100%;
   position: absolute; /* position is absolute, independent of any settings its parent objects have*/
   
-  top: 135px; /* sets its distance from the top to 135px */
   z-index:1; /* z-index to 1 so its over the banner*/
   color:white; /* text color is white */
 }
