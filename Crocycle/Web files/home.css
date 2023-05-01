@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Mont";
+  font-family: "Mont"; /*Mont for general text*/
   src: url("../Fonts/Montserrat.ttf") format('truetype');
 }
 
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "HighC";
+  font-family: "HighC"; /*HighC for Headers*/
   src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
 }
 

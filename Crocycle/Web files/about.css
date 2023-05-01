@@ -18,13 +18,15 @@
     font-family: "Fred";
     src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
   }
+  /*
   
   * {
-    /*Used for debugging objects and space, remove when done */
+    Used for debugging objects and space, remove when done 
     border: 1px solid red;
-    /* adds a solid red border to everything */
+    
+     adds a solid red border to everything 
   }
-  
+  */
   body {
     background-color: #F6E1C3;
     margin: 0;
@@ -42,9 +44,11 @@
   .info {
   
     display: flex;
-    
+  
+    flex-direction: column;
     flex: 1 1 100%;
     width:100%;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     background-color: #E9A178;
@@ -53,10 +57,43 @@
     font-size:30px;
   }
 
-  .info div{
+  .info .mot{
     display:flex;
+    align-items:center;
+    font-family:HighC;
+  }
+  .staff{
+    
+    display:flex;
+    flex-direction:row;
     justify-content:space-between;
     align-items:center;
+    margin: 10px 20px;
+  }
+  .staffimg {  
+    
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    width:40%;
+  }
+  .staffimg img{
+    
+    object-fit: cover;
+    
+    width:95%;
+    height:495px;
+  }
+  .staffimg h3 {
+    font-family: Mont;
+    font-size:17px;
+    
+    text-align: center
+  }
+  .staffimg p {
+    font-family: Mont;
+    font-size:15px;
+    text-align: center;
   }
   
   .info:nth-of-type(2) {
