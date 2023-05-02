@@ -18,10 +18,6 @@
       font-family: "Fred";
       src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
   }
-
-  *{ /*Used for debugging objects and space, remove when done */
-    border: 1px solid red; /* adds a solid red border to everything */
-  }
   
   body{ 
     background-color: #F6E1C3;
@@ -30,8 +26,14 @@
     display: flex;
     flex-direction: column;
   }
+  
+  .header{    
+    height:300px;
+    background-image: url(/Crocycle/Images/StockImages/CrocyleHeaderImg.png);
+   
+  }
   .welcome{ /* sets the welcome page's top for this specific page */
-  top: 185px; /* sets its distance from the top to 175px */
+     top: 145px; /* sets its distance from the top to 175px */
   }
   .sectionsbanner{ /* manages the sectionsbanner class which contains within it the second options menu that lead to the categories of our products */
     display:flex; 

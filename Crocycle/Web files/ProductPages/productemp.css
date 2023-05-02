@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Mont";
+    src: url("../Fonts/Montserrat.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "MontR";
+    src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
+  
+  }
+  
+  @font-face {
+    font-family: "HighC";
+    src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
+  }
+  
+  @font-face {
+      font-family: "Fred";
+      src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
+  }
+
+  * {
+    border: 1px solid red;
+  }
+  .header{    
+    height:110px;
+   
+  }
+
+  .croLogo {
+    transform: translateX(-9px) translateY(-5px);
+  }
+
+  body{ 
+    background-color: #F6E1C3;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .productWrap{
+    
+    display: flex;
+    flex-direction: row;
+  }
+  main{
+    padding: 25px;
+  }
+  .productImg {
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    height: 100%;
+  }
+
+  .productImg img {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 600px;
+  }
+  .productDesc {
+    flex-grow: 2;
+    margin-left: 10px;
+  }
+
+  .productDesc h1{
+    font-family:Mont;
+    font-weight:bold;
+  }
+
+  .productDesc h2{
+    font-family:Mont;
+    font-weight:bold;
+  }

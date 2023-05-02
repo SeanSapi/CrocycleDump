@@ -17,10 +17,9 @@
     
 }
 .header{
-    padding: 40px 45px;
+    /*padding: 40px 45px;*/
+    padding: 15px 15px;
     
-    height: 300px;
-    background-image: url(/Crocycle/Images/StockImages/CrocyleHeaderImg.png);
 
     color:white;
     font-family: Mont; /*use the Frederika font and color*/
@@ -84,6 +83,7 @@
 /* ------------------------------------------------------------------------------------------------- */
 /* declares Fredoka font */
 footer{
+    height: 100%; /* height is 100% */
     font-family: Fred;
     font-weight: 100;
     display: flex;

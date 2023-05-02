@@ -34,9 +34,15 @@
     display: flex;
     flex-direction: column;
   }
+
+  .header{    
+    height:300px;
+    background-image: url(/Crocycle/Images/StockImages/CrocyleHeaderImg.png);
+   
+  }
   .welcome{
     
-    top: 185px; /* sets its distance from the top to 135px */
+    top: 145px; /* sets its distance from the top to 135px */
   }
   
   

@@ -63,7 +63,7 @@ body{
 /*Media Query (Laptop)*/
 @media only screen and (min-width: 1080px){
   .logo{
-    left: 690px;
+    left: 48%;
   }
 }
 
@@ -139,7 +139,7 @@ body{
 .inputs input{
     font-family: MontR;
     outline: none; /* removes the outline from the actual input box */
-    width: 375px;
+    width: 90%;
 }
 
 /*Button*/
