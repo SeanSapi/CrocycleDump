@@ -19,7 +19,8 @@
 
             <!-- a hrefs lead to #, replace with the actual links-->
 
-            <img class="croLogo" src="/Crocycle/Images/Logo/Crocyle Logo.png" height="75px" width="75px" class="croLogo"> </img>
+            <img class="croLogo" src="/Crocycle/Images/Logo/Crocyle Logo.png" height="75px" width="75px"
+                class="croLogo"> </img>
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
@@ -51,7 +52,8 @@
     </div>
 
     <main> <!-- Main Page Body -->
-
+        
+        <!-- This Div contains all the elements related to the product info display-->
         <div class="productWrap">
             <div class="productImg">
                 <img src="/Crocycle/Images/StockImages/Handknitting.png">
@@ -64,38 +66,52 @@
                 <h2> 9.00 AED </h2>
 
                 <div class="sizeSelect">
-                   
-                 <h2>Sizes</h2>
 
-                 <div class="sizeOptions">
+                    <h2>Sizes</h2>
 
-                    
-                    <button class="sizeOp">XXS</button>
-                    <button class="sizeOp">XS</button>
-                    <button class="sizeOp">S</button>
-                    <button class="sizeOp">M</button>
-                    <button class="sizeOp">L</button>
-                    <button class="sizeOp">XL</button>
-                    <button class="sizeOp">XXL</button>
-                    <button class="sizeOp">3XL</button>
-                    <button class="sizeOp">4XL</button>
-                    <button class="sizeOp">5XL</button>
-                    <button class="sizeOp">6XL</button>
+                    <div class="sizeOptions">
 
-                 </div>
 
-                 <h3>Availability: <span style="color:#F3A60F">In Stock</span></h3>
+                        <button class="sizeOp">XXS</button>
+                        <button class="sizeOp">XS</button>
+                        <button class="sizeOp">S</button>
+                        <button class="sizeOp">M</button>
+                        <button class="sizeOp">L</button>
+                        <button class="sizeOp">XL</button>
+                        <button class="sizeOp">XXL</button>
+                        <button class="sizeOp">3XL</button>
+                        <button class="sizeOp">4XL</button>
+                        <button class="sizeOp">5XL</button>
+                        <button class="sizeOp">6XL</button>
+
+                    </div>
+
+                    <h3>Availability: <span style="color:#F3A60F">In Stock</span></h3>
 
                 </div>
 
                 <div>
-                    <h1> Quantity </h1>
+                    <h3> Quantity </h3>
+                    <div class="quantityWrap">
+                        <input type="number" class="quantity" id="quantity" min="1" max="10" value="1" onKeyDown="return false"> <!-- The Number input goes from 1 - 10 and doen't allow for keyboard input-->
+
+                        <div>
+                            <button onclick="document.getElementById('quantity').stepUp()">+</button> <!-- Using JS the button will increment the number input value by 1-->
+                            <button onclick="document.getElementById('quantity').stepDown()">-</button><!-- Using JS the button will decrement the number input value by 1-->
+                        </div>
+
+                        <button class="cartButton">
+                           Add to Basket &nbsp; &nbsp; 
+                            <img src="/Crocycle/Images/Icons/Basket.png" />
+                        </button>
+
+                    </div>
                 </div>
 
 
             </div>
 
-            
+
 
         </div>
 
@@ -107,7 +123,7 @@
     <!-- Footer Section -->
     <footer class="bottom">
         <div>
-            <h4>CONTACT US</h4>
+            <h1>CONTACT US</h1>
             <hr>
             <li><a>crocycleinfo@info.ae</a></li>
             <li><a>00000000</a></li>
