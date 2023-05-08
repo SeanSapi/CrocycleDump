@@ -128,4 +128,10 @@
     color:white;
     text-decoration:none; /* removes text decoration */
     text-shadow: 2px 2px #645a56; /* adds slight shadow on the link text */
+    
+    transition: ease-out 1.5s;
+  }
+  
+  .slider-txt:hover a {
+    font-size:30px
   }
