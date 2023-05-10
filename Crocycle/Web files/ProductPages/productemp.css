@@ -19,10 +19,11 @@
       src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
   }
 
+  /*
   * {
     border: 1px solid red;
   }
-
+  */
 
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
@@ -41,7 +42,7 @@
   }
 
   body{ 
-    background-color: #F6E1C3;
+    background-color: #FFDCAB;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -61,6 +62,7 @@
     max-height: 600px; /* object-fit to fill, 600px max-height and hidden overflow ensures the img inside this div will not have an awkward resolution */
     height: 100%;
     overflow: hidden;
+    border-radius: 5px;
   }
   
   
@@ -124,6 +126,7 @@
     width: fit-content;
     display:flex;
     flex-direction:column;
+    padding: 0 5px;
   }
 
   .quantityWrap button { /* Manages the buttons under the quantityWrap class*/
@@ -137,7 +140,17 @@
     width:100%;
     height: 50%;
     
+    box-shadow: 1px 1px 5px black;
   }
+
+  .quantityWrap input {
+    box-shadow: 1px 1px 5px black;
+  }
+
+  .quantityWrap * {
+    border: none;
+  }
+
   .cartButton{
     margin: 0 30px; /* no top margin, 30px side spacing*/
     display:flex;
